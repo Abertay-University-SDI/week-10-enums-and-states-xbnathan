@@ -7,6 +7,9 @@
 #include "Framework/GameState.h"
 #include <string>
 #include <iostream>
+#include "StateManager.h"
+#include "GameLevel.h"
+#include "Menu.h"
 
 
 class Level : public BaseLevel{
@@ -20,4 +23,7 @@ public:
 
 private:
 	// Default variables for level class.
+	GameState* gameManager;
+	Menu* menu;
+	GameLevel* level;
 };
